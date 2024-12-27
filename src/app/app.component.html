@@ -43,6 +43,10 @@
               <mat-list-item> second </mat-list-item>
             </a>
 
+            <a routerLink="third">
+              <mat-list-item> third </mat-list-item>
+            </a>
+
             <mat-list-item (click)="showSubmenu = !showSubmenu" class="parent">
               <span class="full-width" *ngIf="isExpanded || isShowing"
                 >Parent Menu</span
@@ -91,7 +95,9 @@
         </mat-sidenav>
 
         <div class="example-sidenav-content">
-          <router-outlet></router-outlet>
+          <div class="content_inner">
+            <router-outlet></router-outlet>
+          </div>
         </div>
       </mat-sidenav-container>
     </div>
