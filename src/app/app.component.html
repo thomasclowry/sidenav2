@@ -1,5 +1,5 @@
-<div class="container_outer">
-  <div class="container_inner">
+<div class="w_full">
+  <div class="h_full">
     <div class="header">
       <mat-toolbar>
         <button mat-icon-button (click)="isExpanded = !isExpanded">
@@ -24,7 +24,7 @@
       </mat-toolbar>
     </div>
 
-    <div class="main_content">
+    <div class="document_body">
       <mat-sidenav-container class="example-container" autosize>
         <mat-sidenav
           #sidenav
@@ -94,12 +94,14 @@
           <mat-nav-list> </mat-nav-list>
         </mat-sidenav>
 
-        <div class="example-sidenav-content">
-          <div class="content_inner">
+        <main class="main_content_outer">
+          <div class="main_content_inner">
             <router-outlet></router-outlet>
           </div>
-        </div>
+        </main>
       </mat-sidenav-container>
     </div>
   </div>
 </div>
+
+
